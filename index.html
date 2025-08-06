@@ -5,8 +5,15 @@
   <title>AR Model</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
-    body { margin: 0; }
-    model-viewer { width: 100vw; height: 100vh; }
+    body {
+      margin: 0;
+      background: transparent;
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+      background-color: transparent;
+    }
   </style>
 </head>
 <body>
@@ -17,7 +24,13 @@
     camera-controls
     auto-rotate
     autoplay
-    ios-src="robot1.usdz">
+    ios-src="robot1.usdz"
+    style="background-color: transparent;"
+    exposure="1"
+    disable-zoom
+    shadow-intensity="1"
+    environment-image="neutral"
+  >
   </model-viewer>
 </body>
 </html>
